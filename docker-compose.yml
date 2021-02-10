@@ -1,0 +1,12 @@
+# docker-compose.yml
+version: "3"
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+      - "9229:9229"
+    environment:
+      GOOGLE_ANDROID_OAUTH_CLIENT_ID: INSERT_ID_HERE
+      GOOGLE_IOS_OAUTH_CLIENT_ID: INSERT_ID_HERE
+
